@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+.container {
+    background-image: url('images/bg-mobile.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .box {
+    width: 80%;
+    margin-right: 7%;
+    height: 50%;
+}
+
+.container .box .firstBox{
+    width: 100%;
+    max-width: 400px;
+    height: 40%;
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+    background: var(--Dark-Blue);
+}
+.container .box .firstBox .topbar img{
+    width: 120px;
+    height: 40px;
+    margin: 40px 0 20px 30px;
+}
+.container .box .firstBox .footbar{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.container .box .firstBox .footbar  .doc{
+    display: flex;
+    align-items: center;
+    padding:6px 6px;
+    background: var(--Very-Dark-Blue);
+    border-radius: 6px;
+}
+.container .box .firstBox .footbar  .folder{
+    display: flex;
+    align-items: center;
+    padding: 6px 6px;
+    background: var(--Very-Dark-Blue);
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.container .box .firstBox .footbar  .upload{
+    display: flex;
+    align-items: center;
+    padding: 6px 6px;
+    background: var(--Very-Dark-Blue);
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.container .box .firstBox .footbar img {
+    width: 20px;
+    height: 20px;
+}
+.container .box .secondBox {
+    width: 100%;
+    max-width: 400px;
+    height: 40%;
+    border-radius: 10px;
+    margin-top: 1rem;
+    background: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+}
+.container .box .secondBox h1{
+    padding-top: 40px;
+    padding-left: 20px;
+    color: var(--Grayish-Blue);
+    font-size: 14px;
+}
+.container .box .secondBox strong {
+    color: var(--Pale-Blue);
+}
+.container .box .secondBox .input {
+    width: 80%;
+    height: 15px;
+    margin: 9px 20px;
+    border-radius: 8px;
+    border: 0;
+    background: var(--Very-Dark-Blue);
+}
+.container .box .secondBox .input .barrInput{
+    width: 80%;
+    margin-top: 1.2px;
+    display: flex;
+    border-radius: 5px;
+    height: 81%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.container .box .secondBox .input .ball{
+    width: 12px;
+    height: 12px;
+    margin-left : 95%;
+    background: var(--Pale-Blue);
+    border-radius: 50%;
+}
+.container .box .secondBox .foot{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .box .secondBox .foot span{
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+}
+.container .box .secondBox .infos{
+    margin-top: 20px;
+    z-index: 2;
+    background: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 60px;
+    max-width: 120px;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .box .secondBox .infos h1{
+    color: var(--Very-Dark-Blue);
+    font-size: 20px;
+    padding: 0;
+    padding-left: 4px;
+}
+.container .box .secondBox .infos span{
+    font-size: 12px;
+    padding:5px;
+}
+.attribution {
+    background: rgb(111, 111, 121);
+    align-items: center;
+}
+.attribution a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width: 800px){
+    .container {
+        background: var(--Very-Dark-Blue);
+    }
+    .container .box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+    .container .box .firstBox {
+        height: 50%;
+        width: 23%;
+        max-width: 280px;
+        margin-right: 70px;
+        margin-bottom: 22px;
+    }
+    .container .box .firstBox .topbar img{
+        width: 45%;
+        height: 10%;
+    }
+    .container .box .firstBox .footbar img{
+        width: 20px;
+        height: 20px;
+    }
+    .container .box .firstBox .footbar  .doc{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+    }
+    .container .box .firstBox .footbar  .folder{
+        padding: 8px;
+        margin-left: 5%;
+    }
+    .container .box .firstBox .footbar  .upload{
+        padding: 8px;
+        margin-left: 5%;
+    }
+    .container .box .secondBox h1 {
+        font-size: 17px;
+    }
+    .container .box .secondBox .input {
+        width: 90%;
+        border-radius: 15px;
+    }
+    .container .box .secondBox .infos {
+        margin-top: -38%;
+        margin-left: 65%;
+    }
+    .container .box .secondBox .infos .setinha {
+        width: 15px;
+        height: 15px;
+        background: white;
+        margin-bottom: -50%;
+        border-bottom-left-radius: 40px;
+    }
+}
